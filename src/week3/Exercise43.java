@@ -8,7 +8,6 @@ public class Exercise43 {
       int sum = (number1+number2+number3+number4);
         return sum;
     }
-
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter 4 numbers");
@@ -16,7 +15,6 @@ public class Exercise43 {
         int number2 = reader.nextInt();
         int number3 = reader.nextInt();
         int number4 = reader.nextInt();
-
         System.out.println(sum(number1,number2,number3,number4));
     }
 }
