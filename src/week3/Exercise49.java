@@ -7,14 +7,19 @@ public class Exercise49 {
         System.out.println("Type a name: ");
         Scanner reader = new Scanner(System.in);
         String name = reader.next();
-        System.out.println("First Character :"+firstCharacter(name));
+        System.out.println("Last character :"+lastCharacter(name));
 
     }
-    public static char firstCharacter (String name){
-        char name1 =name.charAt(0);
+    public static char lastCharacter (String name){
+        char name1 =name.charAt(calculateCharacters(name)-1);
 
         return name1;
     }
+    public static int calculateCharacters (String name){
+        int name1=name.length();
+
+        return name1 ;
+    }
 }
 
-}
+
