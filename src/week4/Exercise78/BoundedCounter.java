@@ -1,6 +1,10 @@
 package week4.Exercise78;
 
 public class BoundedCounter {
+
+
+
+
     private int value;
     private int upperLimit;
     int hvalue;
@@ -13,14 +17,29 @@ public class BoundedCounter {
 
         @Override
     public String toString() {
-        return "value: " + value +
-                " upperLimit=" + upperLimit;
+        if (value<=9)
+        {
+            return "0"+ value;
+
+
+    }
+            return "" + value;
     }
 
     public void next() {
         value++;
+
         if(value>upperLimit){
             value=hvalue;
         }
+
     }
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
 }
