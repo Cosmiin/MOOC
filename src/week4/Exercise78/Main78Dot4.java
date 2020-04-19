@@ -32,11 +32,6 @@ public class Main78Dot4 {
                 i++;
                 System.out.println( hours + ":" + minutes+":"+seconds);
             }
-//        int i = 0;
-//        while ( i < 17) {
-//            counter.next();
-//            System.out.println(counter );
-//            i++;
         }
     }
 
